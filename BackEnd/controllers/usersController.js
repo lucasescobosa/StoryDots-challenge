@@ -17,7 +17,7 @@ const usersController = {
         }
         else{
             res.json({
-                error: 'Usuario o contraseña incorrectos'
+                error: 'credenciales incorrectas'
             })
         }
     },

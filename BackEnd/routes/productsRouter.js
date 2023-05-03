@@ -8,11 +8,14 @@ router
     .route('/')
     .get(productsController.index)
     .post(verifyToken, productsController.create)
+    
+router.get('/brands', productsController.brands)
 
 router
     .route('/:id')
     .get(productsController.detail)
     .put(verifyToken, productsController.update)
     .delete(verifyToken, productsController.remove)
+
 
 module.exports = router;

@@ -83,6 +83,14 @@ const productsController = {
             res.status(500).json({ error: e })
         }
     
+    },
+    brands: async(req, res) => {
+        try {
+            const brands = await db.Brand.findAll();
+            res.json(brands)
+        } catch(e) {
+            res.status(500).json({ error: e })
+        }
     }
 }
 
