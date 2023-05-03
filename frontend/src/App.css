@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Open+Sans:ital,wght@0,400;1,300&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;1,100&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.index-slogan{
+  font-family: 'Francois One', sans-serif;
+  text-align: center;
+  color:lightgray
+}
+
+.index-title{
+  font-family: 'Francois One', sans-serif;
+  text-shadow: 1px 1px 10px black;
+}
+
+.index-picture{
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter, 1s;
+}
+
+.index-item:hover .index-picture{
+  filter: grayscale(0%) !important;
+  transform: scale(1.02);
+}
+
+
+.index-banner-img{
+  height: 143px;
+  max-width: 575px;
+  object-fit: cover;
+}
+
+@media (min-width: 576px){
+  .index-banner-img{
+    height: 191px;
+    max-width: 767px;
+    min-width: 576px;
+  }
+}
+
+@media (min-width: 768px){
+  .index-banner-img{
+    height: 255px;
+    max-width: 1023px;
+    min-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .index-banner-img{
+    height: 340px;
+    max-width: 1600px;
+    min-width: 1024px;
+  }
+}

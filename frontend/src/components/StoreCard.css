@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;1,100&display=swap');
+
+.card-product-title {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.card-product-subtitle {
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-product-price {
+    font-family: 'Roboto', sans-serif;
+}
+
+.store-card {
+    transition: all, 0.5s;
+}
+.store-card:hover{
+    transform: scale(1.05);
+}
